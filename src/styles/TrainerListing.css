@@ -1,0 +1,323 @@
+/* Trainer Directory Component Styles */
+.trainer-directory {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header and Search Section */
+.directory-header {
+  margin-bottom: 2.5rem;
+}
+
+.directory-header h1 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-charcoal);
+  position: relative;
+  display: inline-block;
+}
+
+.directory-header h1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 80px;
+  height: 3px;
+  background-color: var(--color-gold);
+}
+
+.directory-subtitle {
+  font-size: 1.1rem;
+  color: var(--color-dark-gray);
+  margin-bottom: 2rem;
+  max-width: 700px;
+}
+
+.search-container {
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.filter-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 1rem;
+}
+
+.filter-tab {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: var(--color-light-gray);
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-tab:hover {
+  background: var(--color-medium-gray);
+}
+
+.filter-tab.active {
+  background: var(--color-emerald);
+  color: white;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-medium-gray);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.search-input:focus {
+  border-color: var(--color-emerald);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 105, 92, 0.2);
+}
+
+.quick-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.quick-filter-btn {
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--color-medium-gray);
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  background: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.quick-filter-btn:hover {
+  background: var(--color-emerald);
+  color: white;
+  border-color: var(--color-emerald);
+}
+
+/* Results Count */
+.results-count {
+  font-weight: 500;
+  color: var(--color-dark-gray);
+  margin-bottom: 1.5rem;
+}
+
+/* Trainers Grid */
+.trainers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.trainer-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+  transition: transform 0.2s ease;
+}
+
+.trainer-card-link:hover {
+  transform: translateY(-5px);
+}
+
+.trainer-card {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid var(--color-medium-gray);
+  transition: box-shadow 0.2s ease;
+  padding: 1.5rem;
+}
+
+.trainer-card-link:hover .trainer-card {
+  box-shadow: var(--shadow-md);
+}
+
+.premium-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--color-gold);
+  color: var(--color-charcoal);
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.trainer-name {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-charcoal);
+  padding-right: 4rem; /* Space for the badge */
+}
+
+.trainer-location {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  color: var(--color-dark-gray);
+  margin-bottom: 0.75rem;
+}
+
+.location-icon {
+  margin-right: 0.35rem;
+  color: var(--color-emerald);
+}
+
+.trainer-rating {
+  margin-bottom: 1rem;
+  color: var(--color-gold);
+  letter-spacing: 1px;
+}
+
+.rating-value {
+  margin-left: 0.5rem;
+  color: var(--color-dark-gray);
+  font-weight: 600;
+}
+
+.trainer-specialties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.specialty-tag {
+  background: rgba(0, 105, 92, 0.1);
+  color: var(--color-emerald);
+  font-size: 0.8rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 2rem;
+  font-weight: 500;
+}
+
+.trainer-bio {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--color-dark-gray);
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.view-profile {
+  display: inline-block;
+  font-weight: 500;
+  color: var(--color-emerald);
+  transition: all 0.2s ease;
+  align-self: flex-start;
+}
+
+.trainer-card-link:hover .view-profile {
+  color: var(--color-gold);
+}
+
+/* No Results */
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.no-results h3 {
+  font-family: var(--font-heading);
+  margin-bottom: 1rem;
+  color: var(--color-charcoal);
+}
+
+.no-results p {
+  margin-bottom: 1.5rem;
+  color: var(--color-dark-gray);
+}
+
+.reset-button {
+  background: var(--color-emerald);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reset-button:hover {
+  background: var(--color-gold);
+  color: var(--color-charcoal);
+}
+
+/* Loading State */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(0, 105, 92, 0.1);
+  border-radius: 50%;
+  border-top-color: var(--color-emerald);
+  animation: spin 1s ease-in-out infinite;
+  margin-bottom: 1.5rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .trainers-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .filter-controls {
+    flex-direction: column;
+  }
+  
+  .filter-tabs {
+    flex-wrap: wrap;
+  }
+  
+  .directory-header h1 {
+    font-size: 2rem;
+  }
+}

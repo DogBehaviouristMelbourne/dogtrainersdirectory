@@ -1,0 +1,77 @@
+/* Map Location Component Styles */
+.map-container {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 1.5rem;
+}
+
+.google-map {
+  width: 100%;
+  height: 300px;
+}
+
+.map-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-medium-gray);
+}
+
+.map-location {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  color: var(--color-dark-gray);
+}
+
+.map-icon {
+  margin-right: 0.5rem;
+  color: var(--color-emerald);
+}
+
+.directions-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-emerald);
+  text-decoration: none;
+}
+
+.directions-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .google-map {
+    height: 250px;
+  }
+  
+  .map-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+/* Google Maps Customizations - targets Google's generated elements */
+/* The !important flag is needed to override Google's default styles */
+
+/* Make info windows match our design */
+.gm-style .gm-style-iw-c {
+  border-radius: var(--radius-sm) !important;
+  padding: 12px !important;
+}
+
+/* Remove the close button background */
+.gm-style .gm-style-iw-t::after {
+  background: none !important;
+}
+
+/* Style map controls */
+.gm-style .gm-style-mtc button,
+.gm-style .gm-style-mtc div {
+  border-radius: var(--radius-sm) !important;
+}

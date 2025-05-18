@@ -1,0 +1,32 @@
+[
+  {
+    "id": "t1",
+    "name": "Pawsitive Steps Training",
+    "suburb": "Carlton",
+    "specialties": ["Anxiety", "Leash Reactivity"],
+    "rating": 4.9,
+    "photo": "pawsitive.jpg",
+    "bio": "Specializing in fear-based behaviours and confidence building.",
+    "slug": "pawsitive-steps-training"
+  },
+  {
+    "id": "t2",
+    "name": "Calm Canine Co.",
+    "suburb": "Richmond",
+    "specialties": ["Puppy Training", "Recall Issues"],
+    "rating": 4.7,
+    "photo": "calmcanine.jpg",
+    "bio": "Helping anxious and overexcited dogs settle into daily life.",
+    "slug": "calm-canine-co"
+  },
+  {
+    "id": "t3",
+    "name": "Urban Tails",
+    "suburb": "Brunswick",
+    "specialties": ["Aggression", "Resource Guarding"],
+    "rating": 4.8,
+    "photo": "urbantails.jpg",
+    "bio": "Behaviour consults focused on bite prevention and trust building.",
+    "slug": "urban-tails"
+  }
+]
