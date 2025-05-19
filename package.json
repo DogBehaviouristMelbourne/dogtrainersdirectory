@@ -4,7 +4,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "analyze": "vite build --mode analyze",
+    "deploy": "vite build && firebase deploy --only functions",
+    "deploy:pages": "vite build && echo 'Deployment to Cloudflare Pages will happen automatically when you push to GitHub'"
   },
   "dependencies": {
     "firebase": "^11.7.3",
@@ -14,6 +17,8 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.0",
-    "vite": "^6.3.5"
+    "terser": "^5.26.0",
+    "vite": "^6.3.5",
+    "rollup-plugin-visualizer": "^5.12.0"
   }
 }

@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { collection, getDocs } from 'firebase/firestore';
 import db from './firebase';
 import './styles/TrainerListing.css';
+import HeroBanner from './components/HeroBanner';
+import FeatureSection from './components/FeatureSection';
 
 // SEO JSON-LD structured data for trainers directory
 const DirectoryJsonLd = () => {
@@ -79,9 +81,13 @@ export default function TrainerListingViewer() {
     <>
       <DirectoryJsonLd />
       
-      <div className="trainer-directory">
+      <HeroBanner />
+      
+      <FeatureSection />
+      
+      <div className="trainer-directory" id="directory-search">
         <div className="directory-header">
-          <h1>Melbourne Dog Trainers Directory</h1>
+          <h2>Melbourne Dog Trainers Directory</h2>
           <p className="directory-subtitle">
             Find specialized trainers for reactive and anxious dogs in your suburb
           </p>

@@ -12,6 +12,9 @@ Welcome to the Dog Trainers Directory documentation! This collection of guides a
 ### For Technical Setup
 
 - [**Deployment Guide**](deployment-guide.md) - Setting up hosting with Cloudflare Pages
+- [**Cloudflare Pages with Existing Domain**](cloudflare-pages-existing-domain.md) - Special instructions for domains already in Cloudflare
+- [**Cloudflare Troubleshooting**](cloudflare-troubleshooting.md) - Solutions for common Cloudflare deployment issues
+- [**DNS "Site Can't Be Reached" Fix**](dns-not-resolving-fix.md) - Specific solution for domain not resolving
 - [**Stripe Setup Guide**](stripe-setup-guide.md) - Configuring payment processing
 
 ### For Developers
@@ -23,7 +26,9 @@ Welcome to the Dog Trainers Directory documentation! This collection of guides a
 
 If you're just beginning with the Dog Trainers Directory, we recommend following these guides in order:
 
-1. **First Steps:** Review the [Deployment Guide](deployment-guide.md) to set up your hosting environment.
+1. **First Steps:** Review the appropriate deployment guide:
+   - If your domain is new: Use the standard [Deployment Guide](deployment-guide.md)
+   - If your domain is already in Cloudflare: Use the [Cloudflare Pages with Existing Domain](cloudflare-pages-existing-domain.md) guide
 2. **Data & Payments:** Follow the [Stripe Setup Guide](stripe-setup-guide.md) to configure payment processing.
 3. **Launch Preparation:** Work through the [Launch Checklist](launch-checklist.md) to ensure nothing is missed.
 4. **Ongoing Operations:** Refer to the [Maintenance Guide](maintenance-guide.md) for day-to-day management.
