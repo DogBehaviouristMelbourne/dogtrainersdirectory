@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Sarah Thompson",
+    "suburb": "Richmond",
+    "experience": 8,
+    "specialties": ["Reactive dogs", "Separation anxiety", "Positive reinforcement"],
+    "qualifications": "Certified Professional Dog Trainer (CPDT-KA)",
+    "email": "sarah@example.com",
+    "phone": "0412 345 678",
+    "website": "https://www.sarahsdogtraining.com.au",
+    "bio": "With 8 years of experience working with dogs of all temperaments, I specialize in helping anxious and reactive dogs using positive reinforcement methods."
+  },
+  {
+    "name": "Michael Rodriguez",
+    "suburb": "Brunswick",
+    "experience": 12,
+    "specialties": ["Behavioral problems", "Puppy training", "Group classes"],
+    "qualifications": "Bachelor of Animal Science, Victoria University",
+    "email": "michael@example.com",
+    "phone": "0423 456 789",
+    "website": "https://www.michaelstraining.com.au",
+    "bio": "After 12 years working with challenging dogs, I've developed effective methods for resolving behavioral issues using science-based approaches."
+  },
+  {
+    "name": "Emily Chen",
+    "suburb": "St Kilda",
+    "experience": 5,
+    "specialties": ["Leash reactivity", "Anxiety management", "In-home training"],
+    "qualifications": "Karen Pryor Academy Certified Training Partner",
+    "email": "emily@example.com",
+    "phone": "0434 567 890",
+    "website": "https://www.emilychendogtraining.com.au",
+    "bio": "I focus on in-home training for dogs with anxiety and leash reactivity issues, using force-free methods that build confidence."
+  },
+  {
+    "name": "David Wilson",
+    "suburb": "Hawthorn",
+    "experience": 15,
+    "specialties": ["Rehabilitation", "Aggression issues", "Rescue dogs"],
+    "qualifications": "Certified Behavior Consultant Canine (CBCC-KA)",
+    "email": "david@example.com",
+    "phone": "0445 678 901",
+    "website": "https://www.davidwilsondogtraining.com.au", 
+    "bio": "With over 15 years working with rescue organizations, I specialize in rehabilitating dogs with complex behavioral challenges and trauma."
+  },
+  {
+    "name": "Jessica Patel",
+    "suburb": "Footscray",
+    "experience": 7,
+    "specialties": ["Reactive dogs", "Enrichment activities", "Urban dog training"],
+    "qualifications": "Jean Donaldson Academy Graduate",
+    "email": "jessica@example.com",
+    "phone": "0456 789 012",
+    "website": "https://www.jessicapateldogtraining.com.au",
+    "bio": "I help city dogs and their owners navigate urban environments confidently, with a focus on enrichment and managing reactivity."
+  }
+]

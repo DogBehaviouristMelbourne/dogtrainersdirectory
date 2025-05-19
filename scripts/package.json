@@ -1,0 +1,20 @@
+{
+  "name": "dog-trainers-directory-automation",
+  "version": "1.0.0",
+  "description": "AI automation scripts for Dog Trainers Directory",
+  "main": "ai-automation.js",
+  "scripts": {
+    "start": "node ai-automation.js",
+    "generate-all": "node ai-automation.js",
+    "generate-descriptions": "node ai-automation.js --type=description",
+    "generate-social": "node ai-automation.js --type=social",
+    "generate-seo": "node ai-automation.js --type=seo",
+    "setup": "npm install"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.1",
+    "openai": "^4.28.4",
+    "sharp": "^0.33.2"
+  }
+}

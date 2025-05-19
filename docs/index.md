@@ -8,6 +8,8 @@ Welcome to the Dog Trainers Directory documentation! This collection of guides a
 
 - [**Maintenance Guide**](maintenance-guide.md) - Day-to-day operations and site management
 - [**Launch Checklist**](launch-checklist.md) - Comprehensive checklist for site launch
+- [**AI Automation Guide**](ai-automation-guide.md) - Using AI to automate website tasks
+- [**AI Scripts**](../scripts/README.md) - Ready-to-use AI tools for content generation
 
 ### For Technical Setup
 
