@@ -30,7 +30,7 @@ const DirectoryJsonLd = () => {
   );
 };
 
-export default function TrainerListingViewer() {
+const TrainerListingViewer = () => {
   const [trainers, setTrainers] = useState([]);
   const [filter, setFilter] = useState("");
   const [loading, setLoading] = useState(true);
@@ -165,14 +165,14 @@ export default function TrainerListingViewer() {
               {filtered.length} trainer{filtered.length !== 1 ? 's' : ''} found
             </p>
             
-            <div className="trainers-grid">
+            <div className="trainer-grid">
               {filtered.map(trainer => (
                 <Link
                   key={trainer.id}
                   to={`/trainers/${trainer.slug}`}
                   className="trainer-card-link"
                 >
-                  <div className="trainer-card">
+                  <div className="trainer-card" style={{ minWidth: 0, minHeight: 0 }}>
                     {trainer.premium && (
                       <span className="premium-badge">Premium</span>
                     )}
@@ -205,6 +205,20 @@ export default function TrainerListingViewer() {
                     </p>
                     
                     <span className="view-profile">View Profile →</span>
+                    
+                    <img
+                      src={trainer.photo}
+                      alt={trainer.name}
+                      loading="lazy"
+                      style={{ width: "100%", borderRadius: "8px", minHeight: 44, minWidth: 44 }}
+                    />
+                    <a
+                      href={`/profile/${trainer.id}`}
+                      style={{ display: "inline-block", minHeight: 44, minWidth: 44, marginTop: "0.5rem" }}
+                      aria-label={`View profile of ${trainer.name}`}
+                    >
+                      View Profile
+                    </a>
                   </div>
                 </Link>
               ))}
@@ -231,3 +245,5 @@ export default function TrainerListingViewer() {
     </>
   );
 }
+
+export default TrainerListingViewer;

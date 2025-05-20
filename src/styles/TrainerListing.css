@@ -171,6 +171,13 @@ html {
   margin-bottom: 2.5rem;
 }
 
+.trainer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
 .trainer-card-link {
   text-decoration: none;
   color: inherit;
@@ -398,5 +405,17 @@ html {
   
   .directory-header h2 {
     font-size: 1.8rem;
+  }
+
+  .listing-title {
+    font-size: 1.5rem;
+  }
+
+  .trainer-card {
+    padding: 1rem;
+  }
+
+  .trainer-bio {
+    font-size: 0.95rem;
   }
 }

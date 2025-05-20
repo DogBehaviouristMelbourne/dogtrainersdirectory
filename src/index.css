@@ -35,13 +35,12 @@ html {
 }
 
 body {
-  font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.6;
-  color: var(--color-charcoal);
-  background-color: var(--color-light-gray);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: #fefefe;
 }
 
 h1, h2, h3, h4, h5 {
@@ -70,16 +69,16 @@ p {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 a {
-  color: var(--color-emerald);
   text-decoration: none;
-  transition: color 0.2s ease;
+  color: inherit;
 }
 
-a:hover {
-  color: var(--color-gold);
+.container {
+  padding: 1rem;
 }
 
 /* Accessibility */
@@ -129,6 +128,21 @@ a:hover {
 @media (max-width: 768px) {
   html {
     font-size: 14px;
+  }
+
+  .nav-menu,
+  .header-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .trainer-card {
+    width: 100% !important;
+    margin-bottom: 1rem;
+  }
+
+  .container {
+    padding: 1rem !important;
   }
 }
 

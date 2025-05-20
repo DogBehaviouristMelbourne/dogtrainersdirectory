@@ -166,7 +166,7 @@ export default function TrainerProfile() {
           <div className="profile-main">
             {trainer.photo && (
               <div className="profile-image">
-                <img src={trainer.photo} alt={trainer.name} />
+                <img src={trainer.photo} alt={trainer.name} loading="lazy" />
               </div>
             )}
             

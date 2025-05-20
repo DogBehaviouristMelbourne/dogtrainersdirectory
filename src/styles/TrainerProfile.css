@@ -409,6 +409,18 @@
 }
 
 @media (max-width: 600px) {
+  .profile-card {
+    padding: 1.25rem;
+  }
+
+  .profile-name {
+    font-size: 1.5rem;
+  }
+
+  .profile-bio {
+    font-size: 0.95rem;
+  }
+
   .specialties-list {
     flex-direction: column;
     gap: 0.75rem;
